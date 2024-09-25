@@ -8,22 +8,39 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Startup_Verdelicia"
         tools:targetApi="31">
-        <activity
-            android:name=".loginActivity"
-            android:exported="false" />
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-    </application>
+        </activity> <!-- Registro da MainActivity -->
 
+        <activity
+            android:name=".ActivityLogin"
+            android:exported="false" />
+
+        <activity
+            android:name=".cadastro_usuario"
+            android:exported="false" />
+
+        <activity
+            android:name=".cadastro_usuario2"
+            android:exported="false" />
+
+        <activity
+            android:name=".termos_autorizacao_usuario"
+            android:exported="false" />
+
+        <activity
+            android:name=".ActivityEsqueciSenha"
+            android:exported="false" />
+
+    </application>
 </manifest>
